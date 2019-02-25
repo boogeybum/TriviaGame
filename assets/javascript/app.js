@@ -1,6 +1,8 @@
 // Declare variables
+var intervalid;
+var time = 5;
+var clockRunning = false;
 
-var time = 3;
 
 
 
@@ -12,14 +14,30 @@ var time = 3;
 // submit button that stores the answer in memory and displays the next trivia question. If no questions left ends game and displays results (number correct/incorrect)
 
 // When timer reaches zero display trivia quiz results (correct/incorrect) and play again button
+function start() {
 
+    // DONE: Use setInterval to start the count here and set the clock to running.
+    if (!clockRunning) {
+      intervalId = setInterval(countDown, 1000);
+      clockRunning = true;
+    }
+  }
 
 // $(".timerText").text(time);
 
 function countDown() {
     if (time > 0) {
     time--;
-    } 
+    } else {
+        $(".question").text("Times Up!");
+        $("button").text("Play Again?");
+        $("button").on("click", function reset() {
+            clockRunning = false;
+            time = 5;
+            $("button").text("Next");
+            $(".question").text("place holder for questions[i]");
+        });
+    }
 
 
   // DONE: Get the current time, pass that into the timeConverter function,
@@ -50,4 +68,4 @@ function timeConverter(t) {
     return minutes + ":" + seconds;
   }
 
-countDown();
+start();
