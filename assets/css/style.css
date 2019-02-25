@@ -1,0 +1,23 @@
+/* Title Header */
+.triviaHeader {
+    text-align: center;
+}
+
+.col-sm-1 {
+    background-color: #777;
+}
+
+/* Timer */
+.timerText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    background-color: #afbbaf;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
