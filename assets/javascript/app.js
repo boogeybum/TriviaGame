@@ -1,7 +1,7 @@
 $(document).ready(function(){
 // Declare variables
 var intervalId = null;
-var time = 10;
+var time = 60;
 var clockRunning = false;
 
 // var trivQuest = 
