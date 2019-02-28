@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 </head>
 <body>
     <div class="container">
@@ -25,31 +25,31 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <p id="timerText" class="timerText"></p>
+                <p id="timerText" class="timerText">1:00</p>
             </div>
         </div>
 
         <div class="row qAndA">
             <div class="col-sm-12">
-                <h3 class="text-sm-left question">1. Which of the Baggins family does Bilbo find most annoying?</h3>
+                <h3 id="triviaQ" class="text-sm-left question">1. Which of the Baggins family does Bilbo find most annoying?</h3>
             </div>
            
             <div class="col-sm-12">
                 <form class="checkboxForm">
                     <label class="checkbox-inline">
-                        <input id="guess1" type="checkbox" name="checkbox">Pippin
+                        <input id="guess1" type="radio" name="checkbox">Pippin
                     </label>
                 
                     <label class="checkbox-inline">
-                        <input id="guess2" type="checkbox" name="checkbox">Frodo
+                        <input id="guess2" type="radio" name="checkbox">Frodo
                     </label>
                 
                     <label class="checkbox-inline">
-                        <input id="guess3" type="checkbox" name="checkbox">Brandywine
+                        <input id="guess3" type="radio" name="checkbox">Brandywine
                     </label>
                 
                     <label class="checkbox-inline">
-                        <input id="guess4" type="checkbox" name="checkbox">Sackensville
+                        <input id="guess4" type="radio" name="checkbox">Sackensville
                     </label>
                 </form> 
             </div>
@@ -61,7 +61,7 @@
         </div>
     </div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

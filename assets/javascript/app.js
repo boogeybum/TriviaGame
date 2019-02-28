@@ -1,9 +1,10 @@
+$(document).ready(function(){
 // Declare variables
-var intervalid;
-var time = 5;
+var intervalId = null;
+var time = 10;
 var clockRunning = false;
 
-
+// var trivQuest = 
 
 
 // Timer that counts down to and stops at zero
@@ -31,11 +32,14 @@ function countDown() {
     } else {
         $(".question").text("Times Up!");
         $("button").text("Play Again?");
+        clearInterval(intervalId);
         $("button").on("click", function reset() {
             clockRunning = false;
-            time = 5;
+            time = 60;
             $("button").text("Next");
             $(".question").text("place holder for questions[i]");
+            $("#timerText").text("1:00");
+            intervalId = setInterval(countDown, 1000);
         });
     }
 
@@ -69,3 +73,4 @@ function timeConverter(t) {
   }
 
 start();
+});
