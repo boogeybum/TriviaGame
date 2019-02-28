@@ -7,7 +7,7 @@ Trivia Game
 
 ## Technology
 * Bootstrap, HTML5, CSS, JavaScript, jQuery
-* Live demo: https://boogeybum.github.io/Triviagame/
+* Live demo: https://boogeybum.github.io/TriviaGame/
 
 ## About
 * The Trivia Game reveals trivia questions sequentially until either all questions are answered or the game timer reaches zero. The player guesses the correct answer by clicking on a radio button next to each answer option listed. In either case, the number of correct and incorrect answers are displayed at the conclusion of the game with the option for the player to start over. 
